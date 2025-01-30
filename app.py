@@ -155,8 +155,11 @@ with st.form(key="corpus_form", clear_on_submit=True):
         if is_update is True:
             id_ = text_selected_record['id']
         else:
-            last_id = st.session_state['texts'][-1]['id']
-            id_ = last_id + 1
+            if st.session_state['texts']:
+                last_id = st.session_state['texts'][-1]['id']
+                id_ = last_id + 1
+            else:
+                id_ = 0
         
         ### BUILD RECORD
         if is_update is False:
