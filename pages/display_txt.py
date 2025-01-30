@@ -1,7 +1,7 @@
 from pathlib import Path
 import streamlit as st
 import pandas as pd
-from datalign.conversions import xml_to_txt
+from utils.conversions import xml_to_txt
 
 
 if "selected_text" not in st.session_state:
