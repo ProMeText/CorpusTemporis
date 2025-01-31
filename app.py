@@ -3,6 +3,7 @@ from utils.time import calculate_century
 from utils.versions import get_last_version, save
 from utils.backup import backup
 from utils.iterables import replace
+from utils.xmls import prittify_xml
 
 
 from pathlib import Path
@@ -203,6 +204,11 @@ with st.form(key="corpus_form", clear_on_submit=True):
                 bytes_data = xml_uploader.read()
                 filename = xml_uploader.name
                 Path(f'xmls/{filename}').write_bytes(bytes_data)
+                try:
+                    formatted_xml = prittify_xml(bytes_data.encode('utf-8'))
+                    Path(f'data/formatted_xmls/{filename}').write_text(formatted_xml)
+                except:
+                    st.error('Problem with xmls formatting')
                 xml_uploader.close()            
         
         # SAVE RECORDS
