@@ -13,8 +13,13 @@ type_options = [
 ]
 
 language_options = [
-    "a",
-    'b'
+    "portugais",
+    'castillan',
+    'castillan',
+    'italien',
+    'latin',
+    'anglais',
+    'français'
 
 ]
 

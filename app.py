@@ -12,7 +12,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import os
-from options import support_options, type_options, genre_options
+from options import support_options, type_options, genre_options, language_options
 
 #################################################
 #    SESSION MANAGMENT FOR TEXTS and SLECTEC_TEST
@@ -98,7 +98,7 @@ with st.form(key="corpus_form", clear_on_submit=True):
     st.markdown("**Information required**")
     
     text_title = st.text_input("Text*", placeholder="Text title", value=get_default_value('text'))
-    language=st.selectbox("Language*", placeholder="Text language", value=get_default_value('language'))
+    language=st.selectbox("Language*", options=language_options, index=get_default_index('language', language_options))
     if is_update is False:
         text_uploader  = st.file_uploader("Upload") 
         st.caption("Please upload a .txt file using the uploader above.")
