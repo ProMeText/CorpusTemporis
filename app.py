@@ -4,6 +4,7 @@ from utils.versions import get_last_version, save
 from utils.backup import backup
 from utils.iterables import replace
 from utils.xmls import prittify_xml
+from utils.xmls import derive_txt
 
 
 from pathlib import Path
@@ -207,9 +208,11 @@ with st.form(key="corpus_form", clear_on_submit=True):
                 try:
                     formatted_xml = prittify_xml(bytes_data.decode('utf-8'))
                     Path(f'data/formatted_xmls/{filename}').write_text(formatted_xml)
+                    derivated_txt = derive_txt(bytes_data.decode('utf-8'))
+                    Path(f'data/derivated_txts/{filename}').write_text(formatted_xml)
                     st.success('Xml Formatted')
                 except Exception as ex:
-                    st.error('Problem with xmls formatting')
+                    st.error('Problem with xmls formatting and derive text')
                     print(ex)
                     st.error(str(ex)[:20])
 
