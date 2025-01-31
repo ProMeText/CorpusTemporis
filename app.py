@@ -211,6 +211,7 @@ with st.form(key="corpus_form", clear_on_submit=True):
                 except Exception as ex:
                     st.error('Problem with xmls formatting')
                     print(ex)
+                    st.error(str(ex)[:20])
 
                 xml_uploader.close()            
         
