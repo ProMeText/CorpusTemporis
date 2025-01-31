@@ -207,6 +207,7 @@ with st.form(key="corpus_form", clear_on_submit=True):
                 try:
                     formatted_xml = prittify_xml(bytes_data.encode('utf-8'))
                     Path(f'data/formatted_xmls/{filename}').write_text(formatted_xml)
+                    st.success('Xml Formatted')
                 except:
                     st.error('Problem with xmls formatting')
                 xml_uploader.close()            
