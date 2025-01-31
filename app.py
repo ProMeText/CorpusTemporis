@@ -204,9 +204,9 @@ with st.form(key="corpus_form", clear_on_submit=True):
             if xml_uploader :
                 bytes_data = xml_uploader.read()
                 filename = xml_uploader.name
-                txt_filename = xml_uploader.stem + '.txt'
                 Path(f'xmls/{filename}').write_bytes(bytes_data)
                 try:
+                    txt_filename = filename.replace('.xml', '.txt')
                     formatted_xml = prittify_xml(bytes_data.decode('utf-8'))
                     Path(f'data/formatted_xmls/{filename}').write_text(formatted_xml)
                     derivated_txt = derive_txt(bytes_data.decode('utf-8'))
