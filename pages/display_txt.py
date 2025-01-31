@@ -48,4 +48,5 @@ if st.session_state['selected_text'] is not None:
                 st.code(xml_content, language="xml")
         with txt_col:
             st.code(txt_path.read_text(), language="txt", wrap_lines=True)
-
+else:
+    st.write('You need to selct a text with xml for using this')
