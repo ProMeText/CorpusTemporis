@@ -12,6 +12,12 @@ type_options = [
     "original redaction"
 ]
 
+language_options = [
+    "a",
+    'b'
+
+]
+
 
 genre_options = ['charte',
 'roman',

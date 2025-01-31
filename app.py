@@ -74,7 +74,7 @@ if len(df):
 st.sidebar.write(st.session_state['selected_text'])
 
 ########################################
-#               HADER
+#               HEADER
 #########################################
 
 # Display title and description
@@ -98,7 +98,7 @@ with st.form(key="corpus_form", clear_on_submit=True):
     st.markdown("**Information required**")
     
     text_title = st.text_input("Text*", placeholder="Text title", value=get_default_value('text'))
-    language=st.text_input("Language*", placeholder="Text language", value=get_default_value('language'))
+    language=st.selectbox("Language*", placeholder="Text language", value=get_default_value('language'))
     if is_update is False:
         text_uploader  = st.file_uploader("Upload") 
         st.caption("Please upload a .txt file using the uploader above.")
