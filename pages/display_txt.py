@@ -29,7 +29,7 @@ if st.session_state['selected_text'] is not None:
         with c1:
             with st.container(height=2000):
                 xml_content = xml_path.read_text()
-                st.code(xml_content[:1000], language="xml")
+                st.code(xml_content[:3000], language="xml")
         with c2:
             txt_content = (derived_txts_folder / (xml_path.stem  + '.txt')).read_text()
             st.code(txt_content, language="txt", wrap_lines=True)
