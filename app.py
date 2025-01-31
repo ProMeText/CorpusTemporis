@@ -205,7 +205,7 @@ with st.form(key="corpus_form", clear_on_submit=True):
                 filename = xml_uploader.name
                 Path(f'xmls/{filename}').write_bytes(bytes_data)
                 try:
-                    formatted_xml = prittify_xml(bytes_data.encode('utf-8'))
+                    formatted_xml = prittify_xml(bytes_data.decode('utf-8'))
                     Path(f'data/formatted_xmls/{filename}').write_text(formatted_xml)
                     st.success('Xml Formatted')
                 except Exception as ex:
