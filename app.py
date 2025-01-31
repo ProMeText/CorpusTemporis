@@ -208,8 +208,10 @@ with st.form(key="corpus_form", clear_on_submit=True):
                     formatted_xml = prittify_xml(bytes_data.encode('utf-8'))
                     Path(f'data/formatted_xmls/{filename}').write_text(formatted_xml)
                     st.success('Xml Formatted')
-                except:
+                except Exception as ex:
                     st.error('Problem with xmls formatting')
+                    print(ex)
+
                 xml_uploader.close()            
         
         # SAVE RECORDS
