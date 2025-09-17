@@ -52,7 +52,7 @@ The corpus primarily consists of **prose texts from the 13th to 15th centuries**
 | **Stats**     | 📊   | Automatic statistics on the submitted corpus. Analyze trends, distributions, and features. |
 | **Texts**     | 📚   | Manage the corpus: search entries, download as CSV, edit or delete texts. |
 
-  ➡️ For more detailed information, see [**docs/features.md**](./docs/features.md).
+>Further documentation is available in [**docs/features.md**](./docs/features.md).
 ---
 
 ## 🚀 Getting Started
