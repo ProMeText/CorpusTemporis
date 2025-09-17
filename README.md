@@ -70,8 +70,9 @@ The corpus primarily consists of **prose texts from the 13th to 15th centuries**
    ```bash
     streamlit run app.py
 
-4. **Access the Application** Open your browser and navigate to http://localhost:8501
-
+4. **Access the Application** 
+Once you run the command, Streamlit will usually **open a new tab in your default browser automatically**.  
+If it doesn’t, you can manually navigate to [http://localhost:8501](http://localhost:8501).
 
 ---
 
