@@ -73,54 +73,49 @@ The corpus primarily consists of **prose texts from the 13th to 15th centuries**
 4. **Access the Application** 
     - Once you run the command, Streamlit will usually **open a new tab in your default browser automatically**.  
     If it doesn’t, you can manually navigate to [http://localhost:8501](http://localhost:8501).
+---
+## 🤝 Contributing & Collaborative Workflow
+
+The **Corpus Temporis dataset (`data.csv`)** is collaboratively maintained by the **ProMeText team**.  
+Contributions are welcome — but the workflow depends on whether you are a **ProMeText member** or an **external contributor**:
 
 ---
 
-## 👥 Collaborative Workflow 
+### 👥 Access Policy
 
-The **Corpus Temporis dataset (`data.csv`)** is a shared resource collaboratively maintained by the **ProMeText team**.  
-To ensure consistency and data integrity, please follow these rules:
+| Role | Permissions |
+|------|-------------|
+| **ProMeText team** | 🔑 Direct write/admin access — can push changes without restriction |
+| **External contributors** | 📝 Can open issues or pull requests, but cannot modify `data.csv` directly |
 
-### 🔒 Access Policy
-- Only the **ProMeText core team** has direct write access to the repository and can push changes to `data.csv`.
-- External contributors are welcome to propose improvements, but cannot modify the dataset directly.
+---
 
-### 📝 How to Contribute New Data
-If you would like to add new texts, annotations, or corrections:
+### 📝 External Contributors — How to Propose New Data
+1. Open a **GitHub Issue** (use label `contribution` when possible).  
+2. Clearly describe the data (text, metadata, segmentation, etc.).  
+3. Optionally fork the repo and create a **Pull Request**.  
+   - ❌ Do **not** edit `data.csv` directly.  
+   - ✅ Add your data in a separate file (e.g., `data_new.csv`) or attach it to the issue/PR.  
+4. The ProMeText team will review and integrate your contribution.
 
-1. Open a **GitHub Issue** describing your contribution.  
-   - Use the label `contribution` when possible.  
-   - Clearly state the type of data (text, metadata, segmentation, etc.).  
-2. Optionally, you can fork the repository and prepare a **pull request** with your proposed changes.  
-   - Please do **not** commit directly to `data.csv`.  
-   - Instead, add your data in a separate file (e.g., `data_new.csv`) or attach it to the issue/PR.  
-3. The ProMeText team will review, integrate, and validate your contribution into the main `data.csv`.
+---
 
-### 🛠️ Local Workflow for Team Members
-For **ProMeText team members**:
-
-1. Always **pull the latest changes** before editing the dataset:
-   ```bash
-   git pull origin main
-    ```
+### 🛠️ ProMeText Team Members — Local Workflow
+1. Pull the latest changes:
+ ```bash
+    git pull origin main
+ ```  
 2. Run the application locally:
-  ```bash
-  streamlit run app.py
-  ```
+ ```bash
+    streamlit run app.py
+   ```
 3. After making changes, commit and push:
-```bash
-  git add data.csv
-  git commit -m "Update dataset: [short description]"
-  git push origin main
-  ```
-4. If you encounter conflicts in data.csv, resolve them manually before pushing.
-
-## 🤝 Contributing
-
-Contributions are welcome! Please fork this repository and submit a pull request for any enhancements or bug fixes.
-Open an issue to suggest improvements or ask questions.
-
-
+  ```bash
+    git add data.csv
+    git commit -m "Update dataset: [short description]"
+    git push origin main
+   ```
+4. *If conflicts occur in `data.csv`, resolve them manually before pushing.*
 ---
 
 ## 🔗 Related Projects
