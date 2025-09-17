@@ -4,8 +4,11 @@
 
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC--BY--NC--SA--4.0-yellow.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-[![Issues](https://img.shields.io/github/issues/carolisteia/CorpusTemporis)](https://github.com/carolisteia/CorpusTemporis/issues)
-[![Releases](https://img.shields.io/github/v/release/carolisteia/CorpusTemporis)](https://github.com/carolisteia/CorpusTemporis/releases)
+[![Issues](https://img.shields.io/github/issues/ProMeText/CorpusTemporis)](https://github.com/ProMeText/CorpusTemporis/issues)
+[![Releases](https://img.shields.io/github/v/release/ProMeText/CorpusTemporis)](https://github.com/ProMeText/CorpusTemporis/releases)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16992629.svg)](https://doi.org/10.5281/zenodo.16992629)
+![Python](https://img.shields.io/badge/python-3.10%2B-blue)
+![Streamlit](https://img.shields.io/badge/streamlit-%E2%9C%94-red?logo=streamlit)
 
 # 📜 Corpus Temporis
 
@@ -30,17 +33,17 @@ This tool ensures that all textual sources are **well-documented, traceable, and
 
 📌 **Links:**
 - [Application Form]() (Currently private)
-- [Compiled Data CSV](https://github.com/carolisteia/mulada/blob/main/data.csv)
+- [Compiled Data CSV](https://github.com/ProMeText/mulada/blob/main/data.csv)
 
 ### Why This Corpus?
 
 This dataset is intended for **training machine learning models for text segmentation**—a key task in breaking down texts into meaningful linguistic units. This work is crucial for improving **text accessibility and analysis, particularly for historical documents.**
 
-The corpus primarily consists of **prose texts from the 13th to 15th centuries**, with the possibility of extending into the mid-16th century. Texts have been selected based on **thematic diversity** to create a **rich dataset** for model training and research purposes.
+The corpus primarily consists of **prose texts from the 13th to 15th centuries**, with the possibility of extending into the mid-16th century. Texts have been selected based on **thematic diversity** to create a **rich dataset** for model training and research purposes. For further information see the related repo [Multilingual segmentation Dataset](https://github.com/ProMeText/multilingual-segmentation-dataset).
 
 ---
 
-## 📌 Features: Medieval Multilingual Corpus App
+## 📌 Features: Corpus Temporis App
 
 The application consists of **four main pages**:
 
@@ -78,8 +81,8 @@ This page allows users to input **detailed metadata** about each text, including
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/carolisteia/mulada.git
-   cd mulada
+   git clone https://github.com/ProMeText/CorpusTemporis.git
+   cd CorpusTemporis
 
 2. **Install dependencies**  
    ```bash
@@ -93,6 +96,45 @@ This page allows users to input **detailed metadata** about each text, including
 
 
 ---
+
+## 👥 Collaborative Workflow 
+
+The **Corpus Temporis dataset (`data.csv`)** is a shared resource collaboratively maintained by the **ProMeText team**.  
+To ensure consistency and data integrity, please follow these rules:
+
+### 🔒 Access Policy
+- Only the **ProMeText core team** has direct write access to the repository and can push changes to `data.csv`.
+- External contributors are welcome to propose improvements, but cannot modify the dataset directly.
+
+### 📝 How to Contribute New Data
+If you would like to add new texts, annotations, or corrections:
+
+1. Open a **GitHub Issue** describing your contribution.  
+   - Use the label `contribution` when possible.  
+   - Clearly state the type of data (text, metadata, segmentation, etc.).  
+2. Optionally, you can fork the repository and prepare a **pull request** with your proposed changes.  
+   - Please do **not** commit directly to `data.csv`.  
+   - Instead, add your data in a separate file (e.g., `data_new.csv`) or attach it to the issue/PR.  
+3. The ProMeText team will review, integrate, and validate your contribution into the main `data.csv`.
+
+### 🛠️ Local Workflow for Team Members
+For **ProMeText team members**:
+
+1. Always **pull the latest changes** before editing the dataset:
+   ```bash
+   git pull origin main
+    ```
+2. Run the application locally:
+  ```bash
+  streamlit run app.py
+  ```
+3. After making changes, commit and push:
+```bash
+  git add data.csv
+  git commit -m "Update dataset: [short description]"
+  git push origin main
+  ```
+4. If you encounter conflicts in data.csv, resolve them manually before pushing.
 
 ## 🤝 Contributing
 
@@ -115,7 +157,7 @@ This repository is part of a broader ecosystem of tools and corpora developed fo
 
 ## 🗂️ Project Structure
  ```bash
-    mulada/
+    CorpusTemporis/
     ├── backup/             # Backup files
     ├── data/               # Data files
     ├── pages/              # Streamlit pages
