@@ -81,7 +81,7 @@ The corpus primarily consists of **prose texts from the 13th to 15th centuries**
 The **Corpus Temporis App** is collaboratively maintained by the **ProMeText team**.  
 
 - The application manages **metadata** describing the texts, available in: [data.csv](./data.csv)  
-- The **raw and segmented texts** are stored in the companion repository: [Multilingual Segmentation Dataset](https://github.com/ProMeText/multilingual-segmentation-dataset/data)  
+- The **raw and segmented texts** are stored in the companion repository: [Multilingual Segmentation Dataset](https://github.com/ProMeText/multilingual-segmentation-dataset/tree/main/data)  
 
 📂 Always access the latest compiled metadata here → [data.csv](./data.csv)
 
