@@ -1,6 +1,6 @@
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC--BY--NC--SA--4.0-yellow.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-[![Issues](https://img.shields.io/github/issues/yourname/corpus-temporis)](https://github.com/yourname/corpus-temporis/issues)
-[![Releases](https://img.shields.io/github/v/release/yourname/corpus-temporis)](https://github.com/yourname/corpus-temporis/releases)
+[![Issues](https://img.shields.io/github/issues/carolisteia/CorpusTemporis)](https://github.com/carolisteia/CorpusTemporis/issues)
+[![Releases](https://img.shields.io/github/v/release/carolisteia/CorpusTemporis)](https://github.com/carolisteia/CorpusTemporis/releases)
 
 # 📜 Corpus Temporis
 
