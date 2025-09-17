@@ -45,38 +45,16 @@ The corpus primarily consists of **prose texts from the 13th to 15th centuries**
 
 ## 📌 Features: Corpus Temporis App
 
-The application consists of **four main pages**:
+| Page          | Icon | Description |
+|---------------|------|-------------|
+| **App**       | 📝   | Main form for text submission. Input metadata, upload TXT/XML, fill required fields (`*`). |
+| **Display TXT** | 📄 | View XML files and convert them into plain text for easier readability. |
+| **Stats**     | 📊   | Automatic statistics on the submitted corpus. Analyze trends, distributions, and features. |
+| **Texts**     | 📚   | Manage the corpus: search entries, download as CSV, edit or delete texts. |
 
-1. **App** – The main form for text submission.
-2. **Display TXT** – View and convert XML files to plain text.
-3. **Stats** – Visualize statistical insights about the uploaded texts.
-4. **Texts** – Manage and search all submitted texts.
-
-### 🔹 **1. App (Submission Form)**
-
-This page allows users to input **detailed metadata** about each text, including:
-- **Source information**
-- **File uploads** (TXT and/or XML)
-- **Mandatory fields** (marked with `*`)
-
-🚨 **Note:** Certain fields are required before submission to ensure completeness.
-
-### 🔹 **2. Display TXT**
-
-- View and **convert XML files** into plain text format for easier readability and processing.
-
-### 🔹 **3. Stats (Text Statistics)**
-
-- Provides **automatically generated statistics** based on the submitted corpus.
-- Helps analyze trends, distribution, and text characteristics.
-
-### 🔹 **4. Texts (Corpus Management)**
-
-- View all submitted texts in a **searchable format**.
-- **Download texts as CSV** for external use.
-- **Modify or delete entries** as needed.
-
+  ➡️ For more detailed information, see [**docs/features.md**](./docs/features.md).
 ---
+
 ## 🚀 Getting Started
 
 1. **Clone the Repository**
