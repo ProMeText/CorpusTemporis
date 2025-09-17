@@ -1,8 +1,17 @@
-# 📜 Medieval Multilingual Corpus App
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC--BY--NC--SA--4.0-yellow.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![Issues](https://img.shields.io/github/issues/yourname/corpus-temporis)](https://github.com/yourname/corpus-temporis/issues)
+[![Releases](https://img.shields.io/github/v/release/yourname/corpus-temporis)](https://github.com/yourname/corpus-temporis/releases)
+
+# 📜 Corpus Temporis
+
+> *An app for multilingual medieval corpora across time.*  
+> *Building temporal bridges through medieval texts.*
+
+
 
 ## Overview
 
-This repository contains the code for a **web-based application form** created for the [Multilingual Corpus](https://github.com/ProMeText/Aquilign/tree/main/data/multiling_data) of the [AQUILIGN — Multilingual Aligner and Collator](https://github.com/ProMeText/Aquilign) project.
+This repository contains the code for a **web-based application form** created for building and structuring the [Multilingual Segmentation Dataset](https://github.com/ProMeText/Aquilign/tree/main/data/multiling_data) of the [AQUILIGN — Multilingual Aligner and Collator](https://github.com/ProMeText/Aquilign) project.
 
 The application was built using [Streamlit](https://streamlit.io/) to facilitate the structured collection, organization, and storage of textual data for historical and linguistic research.
 
@@ -60,29 +69,6 @@ This page allows users to input **detailed metadata** about each text, including
 - **Modify or delete entries** as needed.
 
 ---
-
-## 📜 Licensing
-
-The texts within this corpus are released under the **[CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)** license. This allows:
-✅ Adaptation, remixing, and further development  
-✅ Non-commercial use  
-✅ Proper attribution to original authors  
-✅ Sharing under the same licensing terms  
-
-For full details and source citations, refer to the **"sources"** and **"corpus"** columns in the [compiled data CSV](https://github.com/carolisteia/mulada/blob/main/data.csv).
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please fork this repository and submit a pull request for any enhancements or bug fixes.
-
-## 📞 Contact
-
-For questions or suggestions, please open an issue in this repository.
-
-
-
 ## 🚀 Getting Started
 
 1. **Clone the Repository**
@@ -100,7 +86,27 @@ For questions or suggestions, please open an issue in this repository.
 
 4. **Access the Application** Open your browser and navigate to http://localhost:8501
 
+
 ---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please fork this repository and submit a pull request for any enhancements or bug fixes.
+Open an issue to suggest improvements or ask questions.
+
+
+---
+
+## 🔗 Related Projects
+
+This repository is part of a broader ecosystem of tools and corpora developed for the study of medieval multilingual textual traditions:
+
+- **[Aquilign](https://github.com/your-org/aquilign)**  
+  A clause-level multilingual alignment engine based on contextual embeddings (LaBSE), designed specifically for premodern texts.
+
+- **[Multilingual Segmentation Dataset](https://github.com/your-org/multilingual-segmentation-dataset)**  
+  Source texts and segmented versions in multiple medieval Romance languages, as well as Latin and English, used for training and evaluating clause segmentation models.
+
 
 ## 🗂️ Project Structure
  ```bash
@@ -117,5 +123,16 @@ For questions or suggestions, please open an issue in this repository.
     ├── options.py          # Options configuration
     ├── requirements.txt    # Python dependencies
     └── xmls.py             # XML processing script
+```
+---
 
+## 📜 Licensing
+
+The texts within this corpus are released under the **[CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)** license. This allows:
+✅ Adaptation, remixing, and further development  
+✅ Non-commercial use  
+✅ Proper attribution to original authors  
+✅ Sharing under the same licensing terms  
+
+For full details and source citations, refer to the **"sources"** and **"corpus"** columns in the [compiled data CSV](https://github.com/carolisteia/mulada/blob/main/data.csv).
 
