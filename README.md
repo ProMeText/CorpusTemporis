@@ -31,9 +31,10 @@ The primary goal of this application is to **streamline the collection process**
 
 This tool ensures that all textual sources are **well-documented, traceable, and accessible** for further analysis. It provides an interface for submitting texts, viewing statistical insights, and managing stored records.
 
-📌 **Links:**
-- [Application Form]() (Currently private)
-- [Compiled Data CSV](https://github.com/ProMeText/mulada/blob/main/data.csv)
+📌 **Dataset Access**:  
+- [Metadata CSV (`data.csv`)](./data.csv) — structured metadata about the texts  
+- [Multilingual Segmentation Dataset](https://github.com/ProMeText/multilingual-segmentation-dataset/tree/main/data) — raw and segmented texts
+
 
 ### Why This Corpus?
 
@@ -74,9 +75,18 @@ The corpus primarily consists of **prose texts from the 13th to 15th centuries**
     - Once you run the command, Streamlit will usually **open a new tab in your default browser automatically**.  
     If it doesn’t, you can manually navigate to [http://localhost:8501](http://localhost:8501).
 ---
+
 ## 🤝 Contributing & Collaborative Workflow
 
-The **Corpus Temporis dataset (`data.csv`)** is collaboratively maintained by the **ProMeText team**.  
+The **Corpus Temporis App** is collaboratively maintained by the **ProMeText team**.  
+
+- The application manages **metadata** describing the texts, available in: [data.csv](./data.csv)  
+- The **raw and segmented texts** are stored in the companion repository: [Multilingual Segmentation Dataset](https://github.com/ProMeText/multilingual-segmentation-dataset/data)  
+
+📂 Always access the latest compiled metadata here → [data.csv](./data.csv)
+
+---
+
 Contributions are welcome — but the workflow depends on whether you are a **ProMeText member** or an **external contributor**:
 
 ---
@@ -115,7 +125,7 @@ Contributions are welcome — but the workflow depends on whether you are a **Pr
     git commit -m "Update dataset: [short description]"
     git push origin main
    ```
-4. *If conflicts occur in `data.csv`, resolve them manually before pushing.*
+4. If conflicts occur in `data.csv`, resolve them manually before pushing.
 ---
 
 ## 🔗 Related Projects
