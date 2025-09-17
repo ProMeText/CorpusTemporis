@@ -183,3 +183,17 @@ The texts within this corpus are released under the **[CC BY-NC-SA](https://crea
 
 For full details and source citations, refer to the **"sources"** and **"corpus"** columns in the [compiled data CSV](https://github.com/carolisteia/mulada/blob/main/data.csv).
 
+---
+# 💰 Funding
+
+This work benefited from national funding managed by the **Agence Nationale de la Recherche** under the *Investissements d'avenir* programme with the reference **ANR-21-ESRE-0005 (Biblissima+)**.
+
+> Ce travail a bénéficié d'une aide de l’État gérée par l’**Agence Nationale de la Recherche** au titre du programme d’**Investissements d’avenir** portant la référence **ANR-21-ESRE-0005 (Biblissima+)**.
+
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ProMeText/CorpusTemporis/main/docs/img/logo_biblissima.png" 
+       alt="Biblissima+ Logo" width="600"/>
+</p>
+
+
